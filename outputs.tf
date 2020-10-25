@@ -14,3 +14,6 @@ output "vnet_name" {
 output "subnet_name" {
   value = var.subnet_name
 }
+output "subnet_id" {
+  value = data.azurerm_subnet.dev.id
+}
